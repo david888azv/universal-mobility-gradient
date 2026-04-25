@@ -1,0 +1,5 @@
+phase,months,latitude,alpha,alpha_se,notes
+All seasons,Jan-Dec,11-48 N,3.48,0.12,pooled
+Migration,Sep-Oct; Feb-Mar,varies,3.9,0.2,
+Wintering,Nov-Jan,< 30 N,3.2,0.15,sub-Saharan
+Breeding,Apr-Aug,> 40 N,1.7,0.05,chicks anchor adults; matches human alpha = 1.75 +/- 0.15
