@@ -9,7 +9,9 @@
 
 ## 📄 Manuscript Status
 
-**This single-author manuscript has been submitted to [*Nature*](https://www.nature.com/nature) as an Article and is currently under editorial consideration.** While the paper is in peer review, the manuscript text, cover letter and preregistration are not redistributed here; this repository hosts only the *figures* and the *figure-level numerical data* (CSV) needed to inspect, verify or re-plot the published results. The full text and supporting documents will be linked here upon acceptance. In the meantime, the corresponding author can supply them on reasonable request.
+<p align="justify">
+<strong>This single-author manuscript has been submitted to <a href="https://www.nature.com/nature"><em>Nature</em></a> as an Article and is currently under editorial consideration.</strong> While the paper is in peer review, the manuscript text, the cover letter and the preregistration are not redistributed here; this repository hosts only the <em>figures</em> and the <em>figure-level numerical data</em> (CSV) needed to inspect, verify or re-plot the published results. The full text and supporting documents will be linked here upon acceptance. In the meantime, the corresponding author can supply them on reasonable request.
+</p>
 
 ---
 
@@ -23,20 +25,28 @@
 
 ## 📋 Abstract (short form)
 
-Three influential scaling laws of human mobility — the truncated power law of step lengths and bounded radius of gyration [1], the universal visitation law ρ ∝ (rf)^−2 [2], and the hierarchical-container architecture [3] — were established on datasets of 10⁵–10⁷ humans and have been treated as a human-specific phenomenology. Animal-movement ecology has developed in parallel around a different paradigm based on Lévy-flight foraging [4–6], optimal foraging theory [7] and home-range allometry. Here I apply a single estimator battery to GPS records of **eleven vertebrate species** spanning a behavioural-energetic gradient — nomadic ungulates (Mongolian gazelle, Burchell's zebra), home-ranging and central-place mammals (African elephant, olive baboon), seabirds and migrants (Northern gannet, Galápagos albatross, white stork), bats (*Eidolon helvum*, two studies), and marine reptiles (loggerhead turtle, Mediterranean and N. Pacific) — and compare with the published human values. The phenomenological architecture is universal across all eleven species; the underlying microscopic mechanism is not. The Song preferential-return relations [8] hold closely only when the visitation Zipf exponent ζ approaches unity, defining a continuous gradient from low-CP nomadism (ζ ≈ 0.3 for nomadic gazelles, oceanic turtles and elephants) through migratory and seabird regimes (ζ ≈ 0.7–0.9) to strict central-place colonial life (ζ ≈ 1.6 for olive baboons and Galápagos albatrosses), bracketing the human value ζ ≈ 1.0. The Schläpfer η = 2 [2] is a regime: all eleven non-human species sit at η ∈ [0.35, 1.13] (linear-cost regime), whereas humans on motorised infrastructure return η ≈ 2 (kinetic-cost regime). The Mongolian gazelle, a fully nomadic ungulate, exhibits the heaviest tail among non-human animals (α = 2.29 ± 0.11), the closest non-human approach to the human Lévy reference α = 1.75 ± 0.15. Restricting the stork record to the obligate-CP breeding window yields α_breed = 1.70 ± 0.05, statistically indistinguishable from the human value. Humans are therefore not a separate class of mobile organism but the extremum of a continuous behavioural-energetic axis.
+<p align="justify">
+Three influential scaling laws of human mobility — the truncated power law of step lengths and the bounded radius of gyration [1], the universal visitation law ρ ∝ (rf)<sup>−2</sup> [2], and the hierarchical-container architecture [3] — were established on datasets of 10<sup>5</sup>–10<sup>7</sup> humans and have since been treated as a human-specific phenomenology. Animal-movement ecology has developed in parallel around a different paradigm based on Lévy-flight foraging [4–6], optimal-foraging theory [7] and home-range allometry. Here I apply a single estimator battery to GPS records of <strong>eleven vertebrate species</strong> spanning a behavioural-energetic gradient — nomadic ungulates (Mongolian gazelle, Burchell's zebra), home-ranging and central-place mammals (African elephant, olive baboon), seabirds and migrants (Northern gannet, Galápagos albatross, white stork), bats (<em>Eidolon helvum</em>, two studies), and marine reptiles (loggerhead turtle, Mediterranean and North-Pacific populations) — and compare the results with the published human values.
+</p>
+
+<p align="justify">
+The phenomenological architecture is universal across all eleven species; the underlying microscopic mechanism is not. The Song preferential-return relations [8] hold closely only when the visitation Zipf exponent ζ approaches unity, defining a continuous gradient: from low-CP nomadism (ζ ≈ 0.3 for nomadic gazelles, oceanic turtles, and elephants), through migratory and seabird regimes (ζ ≈ 0.7–0.9), to strict central-place colonial life (ζ ≈ 1.6 for olive baboons and Galápagos albatrosses), bracketing the human value ζ ≈ 1.0 from both sides. The Schläpfer η = 2 [2] is a regime rather than a universal: all eleven non-human species sit at η ∈ [0.35, 1.13] (linear-cost regime), whereas humans on motorised infrastructure return η ≈ 2 (kinetic-cost regime). The Mongolian gazelle, a fully nomadic ungulate, exhibits the heaviest tail among non-human animals (α = 2.29 ± 0.11) — the closest non-human approach to the human Lévy reference α = 1.75 ± 0.15. Restricting the stork record to the obligate-CP breeding window yields α<sub>breed</sub> = 1.70 ± 0.05, statistically indistinguishable from the human value. Humans are therefore not a separate class of mobile organism but the extremum of a continuous behavioural-energetic axis.
+</p>
 
 ### Key findings
 
 - ✅ **Phenomenology is universal across 11 species.** Truncated power-law step lengths, logarithmic saturation of ⟨r_g(t)⟩, four to five hierarchically nested lognormal containers and circadian peaks of return are observed in every species, from nomadic gazelles to colonial baboons.
 - 📈 **A continuous gradient in central-place strength.** ζ spans an unbroken interval ζ ∈ [0.26, 1.64] across the eleven species, bracketing the human value ζ ≈ 1.0 from both sides.
-- 🐺 **Mongolian gazelle is the heaviest-tailed non-human.** α = 2.29 ± 0.11, the closest non-human approach to the human Lévy reference α = 1.75 ± 0.15.
-- 🚗 **Transport-regime split.** All eleven animal species sit at η ∈ [0.35, 1.13] (linear-cost regime); only humans on motorised infrastructure return η ≈ 2 (kinetic-cost regime). The split is by velocity heterogeneity, not phylogeny.
+- 🐺 **Mongolian gazelle is the heaviest-tailed non-human.** α = 2.29 ± 0.11 is the closest non-human approach to the human Lévy reference α = 1.75 ± 0.15.
+- 🚗 **Transport-regime split.** All eleven animal species sit at η ∈ [0.35, 1.13] (linear-cost regime); only humans on motorised infrastructure return η ≈ 2 (kinetic-cost regime). The split is governed by velocity heterogeneity, not phylogeny.
 - 🐣 **Falsifiable test passes.** Restricting the stork record to the obligate-CP breeding window yields α = 1.70 ± 0.05, coinciding with the published human value 1.75 ± 0.15.
 - 📐 **Two-parameter unification.** A minimal generative model with central-place strength γ_CP and velocity heterogeneity η_v places all twelve points (eleven species + human reference) on a continuous (γ_CP, η_v) diagonal.
 
 ### What this reshapes
 
+<p align="justify">
 The result reconciles Christaller's central-place theory with Charnov's marginal-value theorem under a single conserved-effort principle, offers a testable prediction for how "15-minute city" planning should shift urban η towards 1, and reinterprets the long-running Lévy-flight controversy as an artefact of fitting a single power law to a hierarchical-container mixture.
+</p>
 
 ---
 
@@ -66,17 +76,13 @@ universal-mobility-gradient/
 └── README.md                    # You are here
 ```
 
-> 📝 **Note.** The full manuscript PDF, cover letter, preregistration and BibTeX file are intentionally **not** included while the paper is in peer review. They will be added (or linked to the published *Nature* DOI) once the editorial process is complete.
+> 📝 **Note.** The full manuscript PDF, the cover letter, the preregistration and the BibTeX file are intentionally **not** included while the paper is in peer review. They will be added (or linked to the published *Nature* DOI) once the editorial process is complete.
 
 ### Data folder — naming convention
 
-Every CSV lives in `data/<species>/` and follows the pattern
-
-```
-fig<figure_number>_<quantity>_<species>.csv
-```
-
-so a reviewer can locate the numerical content of any panel from its filename alone. For example:
+<p align="justify">
+Every CSV lives in <code>data/&lt;species&gt;/</code> and follows the pattern <code>fig&lt;figure_number&gt;_&lt;quantity&gt;_&lt;species&gt;.csv</code>, so a reviewer can locate the numerical content of any panel from its filename alone. For example:
+</p>
 
 | File | Content |
 |---|---|
@@ -93,30 +99,39 @@ so a reviewer can locate the numerical content of any panel from its filename al
 - `figures/main/` — publication versions of Figures 1–4 (vector PDF and 300 dpi PNG on Nature's double-column width of 183 mm). All four main figures now incorporate the eleven-species sweep.
 - `figures/extended_data/` — four Extended Data figures:
   - **Ext. Fig. 1** — Alessandretti hierarchical containers (three benchmark species).
-  - **Ext. Fig. 2** — Per-species P(Δr) overlay, raw and rescaled by median step length.
+  - **Ext. Fig. 2** — Per-species P(Δr) overlay, raw and rescaled by the median step length.
   - **Ext. Fig. 3** — Forest plot of all six exponents across the eleven species + human.
   - **Ext. Fig. 4** — Unified-model parameter-sweep heatmaps with all twelve points overlaid.
 - `figures/supplementary/<species>/` — intermediate results from each of the four estimator blocks (A — González; B — Song; C — Alessandretti; D — Schläpfer).
 
 ### Manuscript and supporting documents
 
-The submitted manuscript, cover letter, OSF-style preregistration (four falsifiable hypotheses H1–H4 with explicit refutation criteria) and BibTeX database are withheld from public release while peer review is in progress at *Nature*. They are available on reasonable request from the corresponding author and will be linked from this repository once the manuscript is accepted or made publicly available as a preprint.
+<p align="justify">
+The submitted manuscript, the cover letter, the OSF-style preregistration (four falsifiable hypotheses H1–H4 with explicit refutation criteria) and the BibTeX database are withheld from public release while peer review is in progress at <em>Nature</em>. They are available on reasonable request from the corresponding author and will be linked from this repository once the manuscript is accepted or made publicly available as a preprint.
+</p>
 
 ### Scripts
 
-The full analysis pipeline (Python 3.13 — NumPy 2.4, pandas 3.0, SciPy 1.17, Matplotlib 3.10) can be obtained **on request from the corresponding author** (david888azv@unb.br). The pipeline is structured as four modular blocks:
+<p align="justify">
+The full analysis pipeline (Python 3.13 — NumPy 2.4, pandas 3.0, SciPy 1.17, Matplotlib 3.10) can be obtained <strong>on request from the corresponding author</strong> (david888azv@unb.br). The pipeline is structured as four modular blocks:
+</p>
+
 - **Block A** (González 2008): P(Δr) tail fitting, r_g distribution, return probability, Zipf.
 - **Block B** (Song 2010): S(t), P_new(S), waiting times, three scaling relations.
 - **Block C** (Alessandretti 2020): multi-scale container grid + lognormal KS test.
 - **Block D** (Schläpfer 2021): ρ(r,f) visitation regression on 4-month windows.
 
-Plus a block-bootstrap by individual, a stork seasonal split, a two-parameter unified simulator, and a multi-species sweep driver (`run_all.py`) that loops over all 11 species automatically.
+<p align="justify">
+The pipeline also includes a block-bootstrap by individual, a stork seasonal split, a two-parameter unified simulator, and a multi-species sweep driver (<code>run_all.py</code>) that loops over all eleven species automatically.
+</p>
 
 ---
 
 ## 📊 Master summary
 
-Mean ± standard error from bootstrap by individual (N_boot = 500 for all species except stork at N_boot = 50). Full CIs in [`data/cross_species/master_table_all_exponents.csv`](data/cross_species/master_table_all_exponents.csv).
+<p align="justify">
+Mean ± standard error from bootstrap by individual (N<sub>boot</sub> = 500 for every species except white stork at N<sub>boot</sub> = 50). Full confidence intervals are listed in <a href="data/cross_species/master_table_all_exponents.csv"><code>data/cross_species/master_table_all_exponents.csv</code></a>.
+</p>
 
 | Species (n indiv) | α | ζ | μ | γ | β | η |
 |---|---|---|---|---|---|---|
@@ -134,13 +149,17 @@ Mean ± standard error from bootstrap by individual (N_boot = 500 for all specie
 | Burchell's zebra (n=7) | 5.74 ± 1.59 | 0.56 ± 0.10 | 0.97 ± 0.06 | −0.09 ± 0.08 | 3.37 ± 0.65 | 0.75 ± 0.11 |
 | Human (literature) | 1.75 ± 0.15 [1] | ≈ 1.0 [1] | 0.60 [8] | 0.21 [8] | 0.80 [8] | 2.05 ± 0.02 [2] |
 
-Bold entries indicate the cells where the species lies closest to the published human reference: gazelle is the heaviest-tailed non-human (closest to human α), and the breeding-window stork subset coincides with the human α to within 0.05.
+<p align="justify">
+Bold entries mark the values that lie closest to the published human reference: the Mongolian gazelle has the heaviest non-human tail (closest to the human α), and the stork's breeding-window subset coincides with the human α to within 0.05.
+</p>
 
 ---
 
 ## 🔗 Primary data sources
 
-All eleven GPS tracking datasets are hosted in public repositories under permissive Creative Commons licences (**CC0 1.0** in every case). I gratefully acknowledge the original data owners for making the records publicly available:
+<p align="justify">
+All eleven GPS tracking datasets are hosted in public repositories under permissive Creative Commons licences (<strong>CC0 1.0</strong> in every case). I gratefully acknowledge the original data owners for making the records publicly available:
+</p>
 
 | Species (common name) | Location and period | Repository / DOI | Depositors |
 |---|---|---|---|
@@ -152,11 +171,13 @@ All eleven GPS tracking datasets are hosted in public repositories under permiss
 | *Eidolon helvum* (straw-coloured fruit bat) — Abedi-Lartey 2016 | Ghana, 2016 (seed-dispersal study) | [10.5441/001/1.44183438](https://doi.org/10.5441/001/1.44183438) | M. Abedi-Lartey, D. K. N. Dechmann, M. Wikelski, A. Scharf, J. Fahr |
 | *Caretta caretta* (loggerhead sea turtle) — Mediterranean | Western Mediterranean Sea, 2017+ | [10.5441/001/1.1f1h87r8](https://doi.org/10.5441/001/1.1f1h87r8) | S. Hochscheid |
 | *Caretta caretta* (loggerhead sea turtle) — N. Pacific | Japan / North Pacific, 2016+ | [10.5441/001/1.m3c90703](https://doi.org/10.5441/001/1.m3c90703) | J. Okuyama et al. |
-| *Equus quagga burchellii* (Burchell's zebra) | Okavango/Makgadikgadi, Botswana, 2007–2009 | [10.5441/001/1.f3550b4f](https://doi.org/10.5441/001/1.f3550b4f) | H. L. A. Bartlam-Brooks & S. Harris |
-| *Papio anubis* (olive baboon) | Mpala Research Centre, Kenya, Aug 2012 | [10.5441/001/1.kn0816jn](https://doi.org/10.5441/001/1.kn0816jn) | M. C. Crofoot, R. Kays, M. Wikelski (Strandburg-Peshkin et al. 2015) |
+| *Equus quagga burchellii* (Burchell's zebra) | Okavango / Makgadikgadi, Botswana, 2007–2009 | [10.5441/001/1.f3550b4f](https://doi.org/10.5441/001/1.f3550b4f) | H. L. A. Bartlam-Brooks & S. Harris |
+| *Papio anubis* (olive baboon) | Mpala Research Centre, Kenya, August 2012 | [10.5441/001/1.kn0816jn](https://doi.org/10.5441/001/1.kn0816jn) | M. C. Crofoot, R. Kays, M. Wikelski (Strandburg-Peshkin et al. 2015) |
 | *Procapra gutturosa* (Mongolian gazelle) | Eastern Mongolian Steppe, 2007–2010 | Dryad [10.5061/dryad.45157](https://doi.org/10.5061/dryad.45157) | C. H. Fleming, J. M. Calabrese, T. Mueller, K. A. Olson, P. Leimgruber, W. F. Fagan |
 
-Human reference values are drawn directly from refs. [1,2,3,8]; no proprietary human data were analysed.
+<p align="justify">
+Human reference values are taken directly from refs. [1, 2, 3, 8]; no proprietary human data were analysed.
+</p>
 
 ---
 
@@ -176,15 +197,21 @@ Human reference values are drawn directly from refs. [1,2,3,8]; no proprietary h
   <img src="assets/logos/unb.png"   alt="UnB"   height="60"/>
 </p>
 
-D. L. Azevedo acknowledges financial and infrastructural support from the **Fundação de Apoio à Pesquisa do Distrito Federal (FAPDF)** under calls 04/2017 and 09/2022, and from the **Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPq)** through research productivity fellowship 306456/2025-7 (PQ-C). Computational resources were provided by the **Centro Nacional de Processamento de Alto Desempenho em São Paulo (CENAPAD-SP)**.
+<p align="justify">
+D. L. Azevedo acknowledges financial and infrastructural support from the <strong>Fundação de Apoio à Pesquisa do Distrito Federal (FAPDF)</strong> under calls 04/2017 and 09/2022, and from the <strong>Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPq)</strong> through research-productivity fellowship 306456/2025-7 (PQ-C). Computational resources were provided by the <strong>Centro Nacional de Processamento de Alto Desempenho em São Paulo (CENAPAD-SP)</strong>.
+</p>
 
-This work would not have been possible without the eleven public datasets that the original investigators chose to release under CC0 1.0; the author thanks them and the curators of the **Movebank Data Repository** (Max Planck Institute of Animal Behavior) and the **Dryad Digital Repository** for sustaining the long-term infrastructure that makes cross-species synthesis tractable. Specific dataset depositors are listed in the table above.
+<p align="justify">
+This work would not have been possible without the eleven public datasets that the original investigators chose to release under CC0 1.0; the author thanks them and the curators of the <strong>Movebank Data Repository</strong> (Max Planck Institute of Animal Behavior) and the <strong>Dryad Digital Repository</strong> for sustaining the long-term infrastructure that makes cross-species synthesis tractable. Specific dataset depositors are listed in the table above.
+</p>
 
 ---
 
 ## 📖 Citation
 
+<p align="justify">
 If you use this repository in your research, please cite both the manuscript (currently under review) and the underlying public datasets.
+</p>
 
 ```bibtex
 @article{Azevedo2026Mobility,
@@ -201,7 +228,9 @@ If you use this repository in your research, please cite both the manuscript (cu
 
 ## 📜 License
 
-The analysis outputs and manuscript are released under the [**Creative Commons Attribution 4.0 International License**](https://creativecommons.org/licenses/by/4.0/). The underlying GPS tracking data remain under their original CC0 1.0 Universal terms as deposited on Movebank and Dryad.
+<p align="justify">
+The analysis outputs and the manuscript are released under the <a href="https://creativecommons.org/licenses/by/4.0/"><strong>Creative Commons Attribution 4.0 International License</strong></a>. The underlying GPS tracking data remain under their original CC0 1.0 Universal terms as deposited on Movebank and Dryad.
+</p>
 
 ---
 
@@ -227,4 +256,6 @@ Instituto de Física, Universidade de Brasília (UnB)
 8. Song, Koren, Wang & Barabási. *Nat. Phys.* **6**, 818 (2010).
 9. Cheng, Fiedler, Wikelski & Flack. *Ecol. Evol.* **9**, 8945 (2019).
 
-Full bibliography is included in the submitted manuscript and will be linked here upon publication.
+<p align="justify">
+The full bibliography is included in the submitted manuscript and will be linked here upon publication.
+</p>
