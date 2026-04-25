@@ -4,11 +4,11 @@
 [![Journal](https://img.shields.io/badge/Journal-Nature-blue)](https://www.nature.com/nature)
 [![License](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey)](LICENSE)
 [![Data](https://img.shields.io/badge/Data-CC0%201.0-green)](https://www.datarepository.movebank.org/)
-[![Preregistered](https://img.shields.io/badge/Preregistered-OSF-purple)](paper/preregistration.md)
+[![Preregistered](https://img.shields.io/badge/Preregistered-OSF-purple)](#-manuscript-status)
 
 ## 📄 Manuscript Status
 
-**This single-author manuscript has been submitted to [*Nature*](https://www.nature.com/nature) as an Article and is under editorial consideration. Companion files (manuscript PDF, cover letter, preregistration and a master table of all fitted exponents with 95% bootstrap confidence intervals) are provided in [`paper/`](paper/).**
+**This single-author manuscript has been submitted to [*Nature*](https://www.nature.com/nature) as an Article and is currently under editorial consideration.** While the paper is in peer review, the manuscript text, cover letter and preregistration are not redistributed here; this repository hosts only the *figures* and the *figure-level numerical data* (CSV) needed to inspect, verify or re-plot the published results. The full text and supporting documents will be linked here upon acceptance. In the meantime, the corresponding author can supply them on reasonable request.
 
 ---
 
@@ -42,11 +42,6 @@ The result reconciles Christaller's central-place theory with Charnov's marginal
 
 ```
 universal-mobility-gradient/
-├── paper/                       # Submitted manuscript, cover letter, preregistration, BibTeX
-│   ├── manuscript.pdf
-│   ├── cover_letter.pdf
-│   ├── preregistration.md
-│   └── references.bib
 ├── figures/
 │   ├── main/                    # Figures 1–4 of the main text (PDF + PNG, 300 dpi)
 │   ├── extended_data/           # Extended Data Figure 1 (container hierarchy)
@@ -63,6 +58,8 @@ universal-mobility-gradient/
 ├── LICENSE                      # CC BY 4.0
 └── README.md                    # You are here
 ```
+
+> 📝 **Note.** The full manuscript PDF, cover letter, preregistration and BibTeX file are intentionally **not** included while the paper is in peer review. They will be added (or linked to the published *Nature* DOI) once the editorial process is complete.
 
 ### Data folder — naming convention
 
@@ -90,12 +87,9 @@ so a reviewer can locate the numerical content of any panel from its filename al
 - `figures/extended_data/` — hierarchical-container plot cited in §2.5 of the manuscript.
 - `figures/supplementary/<species>/` — intermediate results from each of the four estimator blocks (A — González; B — Song; C — Alessandretti; D — Schläpfer). Reviewers can use these to verify how the headline exponents emerge from the raw data per species.
 
-### Paper folder
+### Manuscript and supporting documents
 
-- `manuscript.pdf` — submitted LaTeX-compiled manuscript (17 pages including methods, references and figures).
-- `cover_letter.pdf` — cover letter addressed to *Nature*'s editors.
-- `preregistration.md` — OSF-style preregistration of the four falsifiable hypotheses (H1–H4), pre-specified pipeline, and explicit refutation criteria.
-- `references.bib` — BibTeX database of all 40 citations.
+The submitted manuscript, cover letter, OSF-style preregistration (four falsifiable hypotheses H1–H4 with explicit refutation criteria) and BibTeX database are withheld from public release while peer review is in progress at *Nature*. They are available on reasonable request from the corresponding author and will be linked from this repository once the manuscript is accepted or made publicly available as a preprint.
 
 ### Scripts
 
@@ -202,4 +196,4 @@ Instituto de Física, Universidade de Brasília (UnB)
 8. Song, Koren, Wang & Barabási. *Nat. Phys.* **6**, 818 (2010).
 9. Cheng, Fiedler, Wikelski & Flack. *Ecol. Evol.* **9**, 8945 (2019).
 
-Full bibliography in [`paper/references.bib`](paper/references.bib).
+Full bibliography is included in the submitted manuscript and will be linked here upon publication.
