@@ -54,6 +54,9 @@ The result reconciles Christaller's central-place theory with Charnov's marginal
 
 ```
 universal-mobility-gradient/
+├── pipeline/                    # Python analysis pipeline (16 scripts, A/B/C/D blocks)
+├── requirements.txt             # numpy, pandas, scipy, matplotlib, requests
+├── data_raw/                    # CC0 raw GPS records — see README for download steps
 ├── figures/
 │   ├── main/                    # Figures 1–4 of the main text (PDF + PNG, 300 dpi)
 │   ├── extended_data/           # Extended Data Figures 1–4
@@ -110,19 +113,24 @@ Every CSV lives in <code>data/&lt;species&gt;/</code> and follows the pattern <c
 The submitted manuscript, the cover letter, the OSF-style preregistration (four falsifiable hypotheses H1–H4 with explicit refutation criteria) and the BibTeX database are withheld from public release while peer review is in progress at <em>Nature</em>. They are available on reasonable request from the corresponding author and will be linked from this repository once the manuscript is accepted or made publicly available as a preprint.
 </p>
 
-### Scripts
+### Scripts (`pipeline/`)
 
 <p align="justify">
-The full analysis pipeline (Python 3.13 — NumPy 2.4, pandas 3.0, SciPy 1.17, Matplotlib 3.10) can be obtained <strong>on request from the corresponding author</strong> (david888azv@unb.br). The pipeline is structured as four modular blocks:
+The full analysis pipeline (Python 3.13 — NumPy 2.4, pandas 3.0, SciPy 1.17, Matplotlib 3.10) is included in this repository under <a href="pipeline/"><code>pipeline/</code></a>. It is structured as four modular blocks plus auxiliary modules:
 </p>
 
-- **Block A** (González 2008): P(Δr) tail fitting, r_g distribution, return probability, Zipf.
-- **Block B** (Song 2010): S(t), P_new(S), waiting times, three scaling relations.
-- **Block C** (Alessandretti 2020): multi-scale container grid + lognormal KS test.
-- **Block D** (Schläpfer 2021): ρ(r,f) visitation regression on 4-month windows.
+- **Block A** (`blocoA.py`, González 2008): P(Δr) tail fitting, r_g distribution, return probability, Zipf.
+- **Block B** (`blocoB.py`, Song 2010): S(t), P_new(S), waiting times, three scaling relations.
+- **Block C** (`blocoC.py`, Alessandretti 2020): multi-scale container grid + lognormal KS test.
+- **Block D** (`blocoD.py`, Schläpfer 2021): ρ(r,f) visitation regression on 4-month windows.
+- **Bootstrap** (`bootstrap.py`): block-bootstrap by individual; deterministic seed `numpy.random.default_rng(42)`.
+- **Stork seasonal split** (`stork_seasonal.py`): yields the breeding-window α = 1.70 of Fig. 4a.
+- **Unified-model simulator** (`unified_model.py`): two-parameter sweep producing Fig. 4b,c and Ext. Fig. 4.
+- **Multi-species driver** (`run_all.py`): loops every block over the eleven species automatically.
+- **Helpers** (`_helpers.py`, `ingest_new_species.py`, `download_movebank.py`, `cross_species_table.py`, `nature_figures.py`, `export_csv.py`).
 
 <p align="justify">
-The pipeline also includes a block-bootstrap by individual, a stork seasonal split, a two-parameter unified simulator, and a multi-species sweep driver (<code>run_all.py</code>) that loops over all eleven species automatically.
+Install dependencies with <code>pip install -r requirements.txt</code>. The eleven raw datasets are not redistributed here (they are CC0 at Movebank/Dryad); see <a href="data_raw/"><code>data_raw/README.md</code></a> for one-shot download instructions using the bundled <code>download_movebank.py</code> helper. The bootstrap is deterministic, so any reviewer can reproduce the exponents reported in the manuscript bit for bit. A Code Ocean capsule of this same pipeline will be made available to editors and peer reviewers during evaluation and will receive a public DOI on acceptance.
 </p>
 
 ---

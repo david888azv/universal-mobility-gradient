@@ -1,0 +1,12 @@
+# =============================================================================
+# Universal Mobility Gradient — Python dependencies
+# Author: David L. Azevedo (david888azv@unb.br)
+# Repository: https://github.com/david888azv/universal-mobility-gradient
+# Tested on Python 3.13.x; the four block scripts and the bootstrap module
+# only use the standard scientific stack listed below.
+# =============================================================================
+numpy>=2.4
+pandas>=3.0
+scipy>=1.17
+matplotlib>=3.10
+requests>=2.31
