@@ -2,20 +2,23 @@
 
 All figure files are available in both vector (PDF) and raster (300 dpi PNG) form. The **main/** and **extended_data/** subfolders reproduce the layout used in the submitted manuscript; **supplementary/** collects the per-species intermediate diagnostics produced by each of the four estimator blocks.
 
-## `main/` — main-text figures
+## `main/` — main-text figures (all redesigned for 11 species)
 
 | File | Panel summary |
 |---|---|
-| `fig1_step_length` | (a–c) Pooled P(Δr) per species with Clauset MLE overlays; (d) cross-species bar of tail exponents, with human reference line. |
-| `fig2_zipf_phase` | (a) ζ bar with 95 % bootstrap CI by individual; (b) 2-D behavioural phase space (ζ, η) with shaded walking/flying and motorised regimes. |
-| `fig3_song_eta` | (a) Discrepancy ratios of Song's three scaling relations across species (log scale); (b) visitation exponent η with η = 1 and η = 2 reference lines. |
-| `fig4_seasonal_unified` | (a) Stork tail exponent by seasonal phase (breeding matches human); (b, c) unified-model heatmaps of ζ and η over (γ_CP, η_v). |
+| `fig1_step_length` | (a–c) Pooled P(Δr) for three representatives of the gradient (Mongolian gazelle, white stork, olive baboon) with Clauset MLE overlays; (d) bar of the tail exponent α across all 11 species + human reference, sorted ascending. |
+| `fig2_zipf_phase` | (a) ζ bar across all 11 species + human, sorted; (b) (ζ, η) phase space populated by all 12 points, with marker shape encoding ecological class. |
+| `fig3_song_eta` | (a) Discrepancy ratios of Song's three scaling relations across the 11 species + human (log scale); (b) visitation exponent η bar with η = 1 and η = 2 reference lines. |
+| `fig4_seasonal_unified` | (a) Stork tail exponent by seasonal phase (breeding matches human α); (b, c) unified-model predicted ζ and η scattered against measured ζ and η across all 11 species + human; the diagonal y = x marks perfect agreement. |
 
 ## `extended_data/` — Extended Data figures
 
 | File | Content |
 |---|---|
-| `ext_fig1_containers` | Container effective size per grid level for the three species; demonstrates the hierarchical-container architecture of ref. [3]. |
+| `ext_fig1_containers` | Container effective size per grid level for the three benchmark species (Alessandretti hierarchy). |
+| `ext_fig2_per_species_pdr` | Per-species P(Δr) overlay across all 11 species, raw and rescaled by the species' median step length. |
+| `ext_fig3_master_forest` | Forest plot of all six exponents (α, ζ, μ, γ, β, η) across the 11 species + human, with 95 % bootstrap CI. |
+| `ext_fig4_model_heatmaps` | Unified-model parameter-sweep heatmaps (model ζ and model η over (γ_CP, η_v)) with all 12 points overlaid; markers that share the same nearest-grid cell carry a small deterministic circular jitter so all are visible. |
 
 ## `supplementary/` — per-species intermediate results
 
